@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureLogin | Cyber Security</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <div class="logo">⬡ SecureLogin</div>
+            <h1>Stay Safe,<br><span>Stay Ahead.</span></h1>
+            <p>Protect your digital world with a modern security experience.</p>
+
+            <div class="features">
+                <p>⬡ Secure Access</p>
+                <p>▣ Data Protection</p>
+                <p>⚡ Fast & Reliable</p>
+                <p>⌘ Cyber Security</p>
+            </div>
+        </section>
+
+        <section class="form-panel">
+            <h2>Create Account</h2>
+            <p class="subtitle">Enter your details to get started.</p>
+
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input id="username" type="text"
+                    placeholder="Enter username" minlength="3" required>
+
+                <label for="email">Email Address</label>
+                <input id="email" type="email"
+                    placeholder="Enter email address" required>
+
+                <label for="password">Password</label>
+                <div class="password-box">
+                    <input id="password" type="password"
+                        placeholder="Minimum 8 characters"
+                        minlength="8" required>
+                    <button id="togglePassword" type="button">Show</button>
+                </div>
+
+                <label>CAPTCHA Verification</label>
+                <div class="captcha-box">
+                    <div id="captchaText">A7K2P9</div>
+                    <button id="refreshCaptcha" type="button"
+                        aria-label="Refresh CAPTCHA">↻</button>
+                </div>
+
+                <input id="captchaInput" type="text"
+                    placeholder="Enter CAPTCHA" autocomplete="off" required>
+
+                <label class="terms">
+                    <input id="agree" type="checkbox" required>
+                    I agree to the Terms & Conditions.
+                </label>
+
+                <button class="login-btn" type="submit">
+                    🔐 Verify & Continue
+                </button>
+
+                <p id="message" role="status" aria-live="polite"></p>
+            </form>
+
+            <footer>Cybersecurity UI Demo</footer>
+        </section>
+    </main>
+</body>
+</html>
