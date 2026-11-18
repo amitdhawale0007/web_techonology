@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body {
+ margin: 0; min-height: 100vh;
+ display: flex; justify-content: center; align-items: center;
+ font-family: Arial; background: #eef2ff;
+}
+.login-box {
+ width: min(90%, 350px); padding: 25px;
+ background: white; border-radius: 12px;
+ box-shadow: 0 8px 25px #0001;
+}
+h1 { text-align: center; color: #243b70; }
+input, button { width: 100%; padding: 12px; margin: 9px 0; }
+input { border: 1px solid #bbb; border-radius: 6px; }
+button { border: 0; border-radius: 6px; background: #3559c7; color: white; }
+#message { text-align: center; color: #256b39; }
